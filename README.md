@@ -11,6 +11,7 @@
   </samp>
 </p>
 
+<br />
 <section id="desafio">
   <h2>:clipboard: Desafio</h2>
   
@@ -18,6 +19,7 @@
   
 </section>
 
+<br />
 <section id="requisitos">
   <h2>:dart: Requisitos</h2>
   
@@ -33,6 +35,7 @@
   
 </section>
 
+<br />
 <section id="tecnologias">
   <h2>:computer: Tecnologias</h2>
   
@@ -50,7 +53,7 @@
   
 </section>
 
-
+<br />
 <section id="comorodaroprojeto">
   <h2>:runner: Como rodar o projeto?</h2>
   
@@ -72,6 +75,7 @@
   
 </section>
 
+<br />
 <section id="testando">
   <h2>:rocket: Testando</h2>
   
@@ -84,4 +88,12 @@
   O projeto foi feito pensando em responsividade, então sinta-se livre para alterar o tamanho das telas para ver como ficará.
   > :information_source: Recomendo que, a cada vez que verificar uma proporção diferente, recarregue a página, pois algumas validações são feitas quando a página é carregada (Realmente como se tivesse acabado de abrir a página num dispositivo com a resolução aplicada.
   
+</section>
+
+<br />
+<section id="contado">
+  <h2>:telephone_receiver: Contato</h2>
+  
+  - [LinkedIn](https://www.linkedin.com/in/henriquepfneto/)
+  - [E-mail](mailto:henriqueneto1912@gmail.com)
 </section>
