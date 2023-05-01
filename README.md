@@ -7,7 +7,7 @@
     <a href="#tecnologias">Tecnologias</a> ▪️
     <a href="#comorodaroprojeto">Como rodar o projeto?</a> ▪️
     <a href="#testando">Testando</a> ▪️
-    <a href="#">Contato</a>
+    <a href="#contato">Contato</a>
   </samp>
 </p>
 
