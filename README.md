@@ -4,9 +4,9 @@
   <samp>
     <a href="#desafio">Desafio</a> ▪️
     <a href="#requisitos">Requisitos</a> ▪️
-    <a href="#">Tecnologias</a> ▪️
-    <a href="#">Como rodar o projeto?</a> ▪️
-    <a href="#">Testando</a> ▪️
+    <a href="#tecnologias">Tecnologias</a> ▪️
+    <a href="#comorodaroprojeto">Como rodar o projeto?</a> ▪️
+    <a href="#testando">Testando</a> ▪️
     <a href="#">Contato</a>
   </samp>
 </p>
@@ -33,7 +33,7 @@
   
 </section>
 
-<section id="desafio">
+<section id="tecnologias">
   <h2>:computer: Tecnologias</h2>
   
   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -46,6 +46,42 @@
   ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
   ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
   ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-  ![Visual Studio Code]( 	https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+  ![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+  
+</section>
+
+
+<section id="comorodaroprojeto">
+  <h2>:runner: Como rodar o projeto?</h2>
+  
+  > :warning: A partir desse momento, assumo que você possui conhecimento básico em docker para prosseguir com os passos.
+  
+  1. Faça o clone ou o fork do repositório;
+      - O repositório já possui todas as configurações necessárias para rodar o projeto, então nada deve dar errado!
+  2. Caso não possua o `Docker` ou `Docker-Compose`, siga com os passos para a instalação dos mesmos;
+      - [Docker](https://docs.docker.com/engine/install/);
+      - [Docker-Compose](https://docs.docker.com/compose/install/);
+  3. Com tudo instalado e rodando, abra o terminal e digite o seguinte comando na pasta raíz do projeto:
+      - `docker-compose up`
+      - > Isso poderá levar alguns minutos, pois o docker irá buildar as imagens e iniciá-las logo em seguida.
+  4. Assim que o processo de build terminar, abra seu navegador de preferência e entre com a seguinte url:
+      - `http://localhost:3000`
+  5. Fim! Agora você tem acesso ao projeto. :partying_face:
+  
+  > :information_source: Caso queira parar a execução do docker-compose, abra o terminal e apenas dê `Ctrl` + `C`
+  
+</section>
+
+<section id="testando">
+  <h2>:rocket: Testando</h2>
+  
+  Aqui vão apenas alguns dados para teste.
+  
+  <b>Credenciais para acesso:</b>
+  - Email: admin@gmail.com
+  - Senha: admin123
+  
+  O projeto foi feito pensando em responsividade, então sinta-se livre para alterar o tamanho das telas para ver como ficará.
+  > :information_source: Recomendo que, a cada vez que verificar uma proporção diferente, recarregue a página, pois algumas validações são feitas quando a página é carregada (Realmente como se tivesse acabado de abrir a página num dispositivo com a resolução aplicada.
   
 </section>
