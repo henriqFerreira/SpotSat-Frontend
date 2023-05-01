@@ -2,6 +2,7 @@ import { Component } from "react";
 import { FaAngleDoubleLeft, FaAngleDoubleRight, FaSignOutAlt } from "react-icons/fa";
 import styles from "./Sidebar.module.css";
 import SidebarItem from "../SidebarItem/SidebarItem";
+import SessionParameters from "../../interfaces/SessionParameters";
 
 interface State {
     Shown: boolean
@@ -13,6 +14,7 @@ class Sidebar extends Component<{}, State> {
     }
 
     logOut () : void {
+        window.localStorage.removeItem("session");
         window.open("/", "_self");
     }
 
@@ -21,6 +23,8 @@ class Sidebar extends Component<{}, State> {
     }
 
     render () {
+        const session: SessionParameters = JSON.parse(window.localStorage.getItem("session")!);
+
         return (
             <aside className={`${ styles.aside } ${ this.state.Shown ? styles.expanded : styles.collapsed }`}>
                 <button className={ styles.toggleAside } onClick={ () => this.toggle() }>
@@ -30,8 +34,8 @@ class Sidebar extends Component<{}, State> {
                     <img src="/assets/spotsat_logo_2.jpg" alt="SpotSat Logo" />
                 </section>
                 <section className={ styles.info }>
-                    <p>Lorem Ipsum</p>
-                    <p>loremipsum@exemplo.com</p>
+                    <p>{ session.name }</p>
+                    <p>{ session.email }</p>
                 </section>
                 <section className={ styles.items }>
                     <div className={ styles.area }>

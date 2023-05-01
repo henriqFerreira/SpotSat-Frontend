@@ -1,16 +1,25 @@
 import { Component } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Navigate, Outlet } from 'react-router-dom';
 import styles from "./App.module.css";
 import Sidebar from '../../components/Sidebar/Sidebar';
 
 class App extends Component {
     render () {
-        return (
-            <main className={ styles.layoutApp }>
-                <Sidebar />
-                <Outlet />
-            </main>
-        )
+        const session = window.localStorage.getItem("session");
+
+        if (session === null) {
+            return (
+                <Navigate to={ '/' } />
+            );
+        } else {
+            return (
+                <main className={ styles.layoutApp }>
+                    <Sidebar />
+                    <Outlet />
+                </main>
+            )
+        }
+
     }
 }
 

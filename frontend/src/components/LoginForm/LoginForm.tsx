@@ -1,6 +1,7 @@
 import { Component } from "react";
 import InputGroup from "../InputGroup/InputGroup";
 import styles from "./LoginForm.module.css";
+import SessionParameters from "../../interfaces/SessionParameters";
 
 interface Properties {
 
@@ -21,6 +22,15 @@ class LoginForm extends Component<Properties, State> {
         password: "",
         passwordError: "",
         error: ""
+    }
+
+    createSession (email: string) {
+        const session: SessionParameters = {
+            name: 'Admin',
+            email: email
+        };
+
+        window.localStorage.setItem("session", JSON.stringify(session));
     }
 
     handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -59,6 +69,8 @@ class LoginForm extends Component<Properties, State> {
             this.setState(() => ({ error: "Credenciais incorretas" }));
             return;
         }
+
+        this.createSession(email);
 
         window.open('/mapas', "_self");
     }
