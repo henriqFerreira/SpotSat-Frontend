@@ -1,0 +1,80 @@
+.layoutAuth {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(var(---base-ntrl-min), 1);
+}
+
+.illustration {
+    --md-lg-i: url("../../../public/assets/md_lg_illustration.svg");
+    --ss-i: url("../../../public/assets/ss_illustration.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.logo {
+    width: 200px;
+}
+
+@media only screen and (width > 1023px) {
+    .layoutAuth {
+        flex-direction: row;
+    }
+
+    .illustration, .content {
+        width: 50%;
+        height: 100vh;
+    }
+
+    .illustration {
+        background-image: var(--md-lg-i);
+    }
+
+}
+
+@media only screen and (width < 1024px) {
+    .layoutAuth {
+        flex-direction: column;
+    }
+
+    .illustration, .content {
+        width: 100%;
+    }
+
+    .illustration {
+        background-image: var(--ss-i);
+        background-size: cover;
+        background-position: bottom;
+        height: 300px;
+        order: 1;
+    }
+
+    .content {
+        height: calc(100vh - 300px);
+        order: 0;
+    }
+
+}
+
+@media only screen and (width < 768px) {
+    .layoutAuth {
+        flex-direction: column;
+    }
+
+    .illustration {
+        display: none;
+    }
+
+    .content {
+        height: 100vh;
+    }
+
+}

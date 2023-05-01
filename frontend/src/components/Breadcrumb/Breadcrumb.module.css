@@ -1,0 +1,29 @@
+.breadcrumb {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.head {
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-bold);
+}
+
+.itemGroup {
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    font-size: var(--fs-small);
+}
+
+@media only screen and (width < 1024px) {
+    .head {
+        font-size: var(--fs-small);
+    }
+    
+    .item {
+        font-size: var(--fs-xsmall);
+    }
+}

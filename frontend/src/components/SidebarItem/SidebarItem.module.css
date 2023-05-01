@@ -1,0 +1,35 @@
+.item {
+    --l-size: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: var(--l-size);
+    padding: 10px;
+    background-color: rgba(var(--base-ntrl-min), 1);
+    border-radius: var(--br-default);
+    font-size: var(--fs-small);
+    color: rgba(var(--base-ntrl-max), 1);
+    overflow: hidden;
+    white-space: nowrap;
+    transition: background-color .1s linear;
+    text-decoration: none;
+}
+
+.item.expanded {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.item.collapsed {
+    width: var(--l-size);
+    justify-content: center;
+}
+
+.item:hover {
+    background-color: rgba(var(--base-ntrl-min-soft), 1);
+}
+
+.icon {
+    font-size: var(--fs-small);
+    color: rgba(var(--base-ntrl-max), 1);
+}

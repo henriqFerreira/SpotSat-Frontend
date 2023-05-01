@@ -1,0 +1,28 @@
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.submitButton {
+    font-size: var(--fs-small);
+    font-weight: var(--fw-bold);
+    color: rgba(var(--base-ntrl-min), 1);
+    background-color: rgba(var(--base-clr), 1);
+    border: none;
+    border-radius: var(--br-default);
+    padding: var(--pd-button);
+    outline: none;
+    cursor: pointer;
+    transition: filter .1s linear;
+}
+
+.submitButton:hover {
+    filter: brightness(.8);
+}
+
+.error {
+    font-size: var(--fs-small);
+    text-transform: capitalize;
+    color: rgba(var(--base-clr-alert), 1);
+}

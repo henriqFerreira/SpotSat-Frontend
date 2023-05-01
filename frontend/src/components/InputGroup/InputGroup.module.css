@@ -1,0 +1,22 @@
+.inputGroup {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-transform: uppercase;
+    font-size: var(--fs-small);
+}
+
+.input {
+    font-size: var(--fs-regular);
+    padding: var(--pd-input);
+    border-radius: var(--br-default);
+    border: 2px solid rgba(var(--base-ntrl-medium), 1);
+    outline: none;
+}
+
+.error {
+    font-size: var(--fs-small);
+    text-transform: capitalize;
+    color: rgba(var(--base-clr-alert), 1);
+}

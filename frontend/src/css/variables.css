@@ -1,0 +1,44 @@
+:root {
+    /* Font family */
+    --ff-default: 'Red Hat Display', sans-serif;
+
+    /* Colors */
+    --base-ntrl-max: 0, 0, 0;
+    --base-ntrl-max-soft: 14, 17, 17;
+    --base-ntrl-min: 255, 255, 255;
+    --base-ntrl-min-soft: 237, 241, 246;
+
+    --base-ntrl-medium: 190, 190, 190;
+
+    --base-clr: 0, 41, 99;
+    --base-clr-lt: 107, 180, 214;
+
+    --base-clr-accent: 255, 17, 37;
+
+    --base-clr-alert: 208, 52, 44;
+
+    /* Font sizes text */
+    --fs-xsmall: 0.8rem;
+    --fs-small: 0.9rem;
+    --fs-regular: 1rem;
+    --fs-medium: 1.2rem;
+    --fs-large: 1.3rem;
+
+    /* Fonnt sizes header */
+    --fs-h-small: 1.8rem;
+    --fs-h-regular: 2rem;
+    --fs-h-medium: 2.2rem;
+    --fs-h-large: 2.5rem;
+
+    /* Font weights */
+    --fw-light: 100
+    --fw-regular: 500;
+    --fw-bold: 700;
+
+    /* Padding */
+    --pd-input: 8px 10px;
+    --pd-button: 8px 10px;
+
+    /* Border */
+    --br-default: 4px;
+}

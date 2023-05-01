@@ -1,0 +1,33 @@
+.layoutApp {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-column-gap: 50px;
+}
+
+.layoutApp > main {
+    padding-block: 20px;
+    padding-right: 40px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+@media only screen and (width < 1024px) {
+    .layoutApp {
+        grid-column-gap: 40px;
+    }
+
+    .layoutApp > main {
+        padding-right: 30px;    
+    }
+}
+
+@media only screen and (width < 768px) {
+    .layoutApp {
+        grid-column-gap: 30px;
+    }
+
+    .layoutApp > main {
+        padding-right: 20px;    
+    }
+
+}

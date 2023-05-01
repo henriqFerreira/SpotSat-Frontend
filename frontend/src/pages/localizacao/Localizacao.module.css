@@ -1,0 +1,29 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title {
+    font-size: var(--fs-h-large);
+    font-weight: var(--fw-medium);
+}
+
+.maps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media only screen and (width < 1024px) {
+    .title {
+        font-size: var(--fs-h-regular);
+    }
+}
+
+@media only screen and (width < 768px) {
+    .title {
+        font-size: var(--fs-h-small);
+    }
+}
