@@ -53,7 +53,7 @@ class LoginForm extends Component<Properties, State> {
             return;
         }
         
-        if (email !== 'admin' || password !== 'admin123') {
+        if (email !== 'admin@gmail.com' || password !== 'admin123') {
             this.setState(() => ({ emailError: "" }));
             this.setState(() => ({ passwordError: "" }));
             this.setState(() => ({ error: "Credenciais incorretas" }));
